@@ -1,22 +1,25 @@
 let button1 = document.querySelectorAll(".right");
 let score = 0;
 let otherbuttons = document.querySelectorAll(".Wrong");
-let answer = "input answer";
+let answer = " ";
 let lastButton = document.querySelectorAll(".last");
 
+console.log(otherbuttons);
+console.log(button1);
 
 for (let i = 0; i < otherbuttons.length; i++){
     otherbuttons[i].addEventListener("click", wrong);
+    otherbuttons[i].addEventListener("click", disableClick);
 }
-console.log(otherbuttons);
+
 
 for (let j = 0; j < button1.length; j++){
-    button1[j].addEventListener("click", correct);
+    button1[j].addEventListener("click", correct, disableClick);
 }
 for (let h = 0; h < lastButton.length; h++){
     lastButton[h].addEventListener("click", final)
 }
-console.log(lastButton);
+
 function final(){
     setTimeout(function(){ 
         if(score >= 15){
@@ -33,11 +36,18 @@ function final(){
 
 function correct() {
     score +=1;
-    alert("Nice Job! Your score is " + score + ". keep going.")
+    alert("Nice Job! Your score is " + score)
+
 }
 
 function wrong (){
-    alert("sorry. Nice try though. The correct answer is " + answer);
+    alert("sorry. Nice try though");
+}
+
+function disableClick (){
+    otherbuttons.disabled = true;
+    button1.disabled = true;
+    console.log("did it work?")
 }
 
 //figure out how to make it so there is no repeat answer. 
