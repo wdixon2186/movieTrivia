@@ -20,13 +20,13 @@ console.log(lastButton);
 function final(){
     setTimeout(function(){ 
         if(score >= 15){
-            alert("you're a movie hero.")
+            alert("You're score is " + score + "/20 you're a movie hero.")
         }
         else if(score >= 10){
-            alert("you need some work.")
+            alert("You're score is " + score + "/20 you need some work.")
         }
         else{
-            alert("have you even seen a movie?")
+            alert("You're score is " + score + "/20 have you even seen a movie?")
         }
      }, 500);
 }
@@ -40,10 +40,10 @@ function wrong (){
     alert("sorry. Nice try though. The correct answer is " + answer);
 }
 
-//Consider making it a slide show with 5 questions on each slide. 
-
 //figure out how to make it so there is no repeat answer. 
 
 //set it up so that the right answer highlights green or if you have time add a picture. 
 
-//make the buttons the same with the names next to them.
+//figure out how to only trigger the check score when all buttons are clicked. 
+
+//create a modul for the final score. 

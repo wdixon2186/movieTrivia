@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+    background-color: lightgray;
+    opacity: .9;
+}
+button{
+    width: 300px;
+    height: 60px;
+    background-color: lightblue;
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+div{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}

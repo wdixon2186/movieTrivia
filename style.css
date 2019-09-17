@@ -1,7 +1,22 @@
 body{
     text-align: center;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfR-G_Mt3ITGfEDwFklvTUgBIeq9SjbIhQ0R0Ba_zD1ZXzd2Xi_g");
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/classics-1566494388.jpg?crop=0.502xw:1.00xh;0.260xw,0&resize=640:*");
     background-size: 1000px;
+    color: red;
+}
+button{
+    width: 400px;
+    height: 200px;
+    background-color: yellow;
+    font-size: 75px;
+}
+div{
+    background-color:black;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
 }
 
 /* Script title page. put the title on a time out and set the instructions. */
