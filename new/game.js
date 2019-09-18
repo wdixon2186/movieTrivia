@@ -1,29 +1,6 @@
-// let button3 = document.querySelector(".right");
 let button1 = document.querySelectorAll(".right");
 let score = 0;
 let otherbuttons = document.querySelectorAll(".Wrong");
-// let answer = " ";
-// let lastButton = document.querySelectorAll(".last");
-// let Q1 = document.querySelector("#Q1");
-// let Q2 = document.querySelector("#Q2");
-// let Q3 = document.querySelector("#Q3");
-// let Q4 = document.querySelector("#Q4");
-// let Q5 = document.querySelector("#Q5");
-// let Q6 = document.querySelector("#Q6");
-// let Q7 = document.querySelector("#Q7");
-// let Q8 = document.querySelector("#Q8");
-// let Q9 = document.querySelector("#Q9");
-// let Q10 = document.querySelector("#Q10");
-// let Q11 = document.querySelector("#Q11");
-// let Q12 = document.querySelector("#Q12");
-// let Q13 = document.querySelector("#Q13");
-// let Q14 = document.querySelector("#Q14");
-// let Q15 = document.querySelector("#Q15");
-// let Q16 = document.querySelector("#Q16");
-// let Q17 = document.querySelector("#Q17");
-// let Q18 = document.querySelector("#Q18");
-// let Q19 = document.querySelector("#Q19");
-// let Q20 = document.querySelector("#Q20");
 
 for (let i = 0; i < otherbuttons.length; i++){
     otherbuttons[i].addEventListener("click", wrong);
@@ -39,20 +16,20 @@ for (let j = 0; j < button1.length; j++){
 // for (let h = 0; h < lastButton.length; h++){
 //     lastButton[h].addEventListener("click", final)
 // }
+let submit = document.querySelector("#submit");
+submit.addEventListener("click", final);
 
-// function final(){
-//     setTimeout(function(){ 
-//         if(score >= 15){
-//             alert("You're score is " + score + "/20 you're a movie hero.")
-//         }
-//         else if(score >= 10){
-//             alert("You're score is " + score + "/20 you need some work.")
-//         }
-//         else{
-//             alert("You're score is " + score + "/20 have you even seen a movie?")
-//         }
-//      }, 500);
-// }
+function final(){
+        if(score >= 15){
+            alert("You're score is " + score + "/20 you're a movie hero.")
+        }
+        else if(score >= 10){
+            alert("You're score is " + score + "/20 you need some work.")
+        }
+        else{
+            alert("You're score is " + score + "/20 have you even seen a movie?")
+        }
+     }
 
 function correct() {
     score +=1;

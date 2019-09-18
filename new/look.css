@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background-color: lightgray;
+    background-color: rgb(216, 216, 164);
     opacity: .9;
 }
 button{
@@ -17,4 +17,14 @@ div{
     width: 700px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#submit{
+    background: green;
+    width: 606px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#bottom{
+    padding: 200px 0px 500px 0px;
 }
