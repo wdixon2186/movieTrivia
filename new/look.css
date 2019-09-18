@@ -1,7 +1,6 @@
 body{
     text-align: center;
     background-color: rgb(216, 216, 164);
-    opacity: .9;
 }
 button{
     width: 300px;
@@ -27,4 +26,59 @@ div{
 }
 #bottom{
     padding: 200px 0px 500px 0px;
+}
+
+
+
+#modal{
+	background-color: rgba(0,0,0,.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+}
+#modalTextbox{
+	background-color: white;
+	height: 350px;
+	width: 550px;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(o,0,0,.2);
+	padding: 2%;
+	line-height: 120%;
+	font-family: 'Arial';
+}
+
+#modalFooter{
+    text-align: right;
+}
+
+h1{
+	padding-bottom: 15px;
+}
+
+.modal-buttons{
+	padding: 14px 18px;
+	background-color: #677996;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Arial';
+	cursor: pointer;
+
+}
+#score{
+    position: fixed;
+}
+#close{
+   background-color: red;
+}
+#modalLarge{
+    color: blue;
+    padding: 50px;
 }

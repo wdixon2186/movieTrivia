@@ -1,6 +1,7 @@
 let button1 = document.querySelectorAll(".right");
 let score = 0;
 let otherbuttons = document.querySelectorAll(".Wrong");
+let all = document.querySelectorAll("button");
 
 for (let i = 0; i < otherbuttons.length; i++){
     otherbuttons[i].addEventListener("click", wrong);
@@ -16,28 +17,51 @@ for (let j = 0; j < button1.length; j++){
 // for (let h = 0; h < lastButton.length; h++){
 //     lastButton[h].addEventListener("click", final)
 // }
+// function color (){
+//      Q3.style.backgroundColor = "white";
+    
+// }
+// for (let w = 0; w < all.length -2; w++){
+//     all[w].addEventListener("mouseover", color)
+//     console.log(all[w]);
+    
+// }
+let keeper = document.querySelector("#score");
 let submit = document.querySelector("#submit");
+let modal = document.querySelector("#modal");
+let close = document.querySelector("#close");
+let modalTextbox = document.querySelector("#modalTextbox");
+submit.addEventListener("click", openModal);
 submit.addEventListener("click", final);
+close.addEventListener("click", closeModal);
+
+function openModal (){
+    modal.style.display = "block";
+}
+function closeModal (){
+    modal.style.display = "none";
+}
 
 function final(){
         if(score >= 15){
-            alert("You're score is " + score + "/20 you're a movie hero.")
+            modalLarge.innerText ="Look at you! You managed to \n\n get \n\n\n\ " + score *5 + "% correct. \n\n\n\ You're a movie hero"
         }
         else if(score >= 10){
-            alert("You're score is " + score + "/20 you need some work.")
+            modalLarge.innerText ="You managed to get \n\n\n\ " + score * 5 + "%  correct. \n\n\n\ you need some work.";
         }
         else{
-            alert("You're score is " + score + "/20 have you even seen a movie?")
+            modalLarge.innerText = "You managed to get \n\n\n\ " + score * 5 + "% correct. \n\n\n\ Have you even seen a \n\n movie?"
         }
      }
 
 function correct() {
     score +=1;
-    alert("Nice Job! Your score is " + score);
+    keeper.innerHTML = "Score:" + score;
+    
 }
 
 function wrong (){
-    alert("sorry. Nice try though");
+
 }
 
 // function disableClick (){
@@ -138,6 +162,7 @@ let Q80 = document.querySelector("#eighty");
 function one (){
     Q1.style.backgroundColor = "red";
     Q3.style.backgroundColor = "green";
+    Q3.style.color = "white";
     Q1.disabled = true;
     Q2.disabled = true;
     Q3.disabled = true;

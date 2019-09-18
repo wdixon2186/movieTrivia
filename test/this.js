@@ -1,48 +1,105 @@
-let questions = [{question: "You're going to need a bigger boat. \n (1) The GodFather, \n (2) The Titanic \n (3) Jaws \n (4) The perfect storm",
-answer: "3"},
-{question: "Rosebud. \n (1) Citizen Kane \n (2) CasaBlanca \n (3) Gone With The Wind \n (4) Seven Samurai",
-answer: "1"},
-{question: "Well, technically speaking, the operation is brain damage, but it's on a par with a night of heavy drinking. Nothing you'll miss. \n (1)Eyes Without A Face \n (2) Eternal Sunshine Of The Spotless Mind \n (3) Tusk \n (4) Audition",
-answer: "2"},
-{question: "I... drink... your... milkshake! \n (1)Goodfellas \n (2) Good Burger \n (3) There Will Be Blood \n (4) Brink",
-answer: "3"},
-{question: "What's the most you've ever lost on a coin toss? \n (1) The Gambler \n (2) Cool Hand Luke \n (3) The Dark Knight \n (4) (No Country For Old Men)",
-answer: "4"},
-{question: "There are times when it is necessary to abandon our humanity to save humanity. \n (1) Saving Private Ryan \n (2) War For The Planet Of The Apes \n (3) Irreversible \n (4) Fury",
-answer: "2"},
-{question: "Now you just got a little boy's father killed. You almost got us killed. And now you're lying to me. So how about this: from now on, every word out of your mouth is the truth, or I'm gonna hurt you. \n (1) Drive \n (2) You Were Never Really Here \n (3) Taxi Driver \n (4) The Departed",
-answer: "1"},
-{question: "I went to the woods because I wanted to live deliberately. I wanted to live deep and suck out all the marrow of life. To put to rout all that was not life; and not, when I had come to die, discover that I had not lived. \n (1) Little Miss Sunshine \n (2) Into The Wild \n (3) Dead Poets Society \n (4) Leaving Las Vegas",
-answer: "3"},
-{question: "are you really a selkie? \n (1) The Little Mermaid \n (2) Dude Where's My Car \n (3) Bright \n (4) Song Of The Sea",
-answer: "4"},
-{question: "I think forgiveness has been highly underrated. \n (1) Analyze This \n (2) Analyze That \n (3) Calvary \n (4) Blade Runner",
-answer: "3"},
-{question: "Courage is the solution to despair, reason provides no answers. I can't know what the future will bring; we have to choose despite uncertainty. Wisdom is holding two contradictory truths in our mind, simultaneously, Hope and despair. A life without despair is a life without hope. Holding these two ideas in our head is life itself. \n (1) First Reformed \n (2) A Few Good Men \n (3) Apacolypse Now \n (4) Love Actually",
-answer: "1"},
-{question: "When you least expect it, nature has cunning ways of finding our weakest spot. \n (1) Looper \n (2) 500 Days Of Summer \n (3) The Hunger Games \n (4) Call Me By Your Name",
-answer: "4"},
-{question: "He's like Daniel Day-Lewis except he sucks. \n (1) The Other Guys \n (2) The Big Sick \n (3) The Hangover \n (4) Cabin In The Woods",
-answer: "2"},
-{question: "Isn't it strange, to create something that hates you? \n (1) Dan In Real Life \n (2) Splice \n (3) Ex Machina \n (4) The Terminator",
-answer: "3"},
-{question: "I don't walk through this world with fear in my heart. \n (1) Wonder Woman \n (2) Tree Of Life \n (3) Legion \n (4) The Grey",
-answer: ("4")},
-{question: "Marriage is buying a house for someone you hate. \n (1) Parenthood \n (2) The Nice Guys \n (3) Kramer vs Kramer \n (4) Eyes Wide Shut",
-answer: "2"},
-{question: "He's my good friend and I like him, but... Dani, do you feel held by him? Does he feel like home to you? \n (1) Ordinary People \n (2) Sunset Blvd. \n (3) Moonstruck \n (4) Midsommar",
-answer: "4"},
-{question: "Dave, stop. Stop, will you? Stop, Dave. Will you stop Dave? Stop, Dave. \n (1) 2001: A Space Oddyssey \n (2) Mike And Dave Need Wedding Dates \n (3) Serenity \n (4) You're Next",
-answer: "1"},
-{question: "I shall never forget that scream as long as I live... \n (1) The Fly \n (2) The Ring \n (3) The Texas Chainsaw Massacre \n (4) Scream",
-answer: "1"},
-{question: "These arrows cut through the bone like a fat kid eats cake. \n (1) Robin Hood Men In Tights \n (2) Blade Trinity \n (3) Mandy \n (4) Deadpool 2",
-answer: "3"}];
-let score = 0;
+let info = {
+    questions: {
+        q1: "You're going to need a bigger boat.",
+        q2: "Rosebud.",
+        q3:"Well, technically speaking, the operation is brain damage, but it's on a par with a night of heavy drinking. Nothing you'll miss.",
+        q4: "I... drink... your... milkshake!",
+        q5: "What's the most you've ever lost on a coin toss?",
+        q6:"There are times when it is necessary to abandon our humanity to save humanity.",
+        q7:"Now you just got a little boy's father killed. You almost got us killed. And now you're lying to me. So how about this: from now on, every word out of your mouth is the truth, or I'm gonna hurt you.",
+        q8:"I went to the woods because I wanted to live deliberately. I wanted to live deep and suck out all the marrow of life. To put to rout all that was not life; and not, when I had come to die, discover that I had not lived.",
+        q9:"are you really a selkie?",
+        q10:"I think forgiveness has been highly underrated.",
+        q11:"Courage is the solution to despair, reason provides no answers. I can't know what the future will bring; we have to choose despite uncertainty. Wisdom is holding two contradictory truths in our mind, simultaneously, Hope and despair. A life without despair is a life without hope. Holding these two ideas in our head is life itself.",
+        q12: "When you least expect it, nature has cunning ways of finding our weakest spot.",
+        q13:"He's like Daniel Day-Lewis except he sucks.",
+        q14:"Isn't it strange, to create something that hates you?",
+        q15:"I don't walk through this world with fear in my heart.",
+        q16:"Marriage is buying a house for someone you hate.",
+        q17:"He's my good friend and I like him, but... Dani, do you feel held by him? Does he feel like home to you?",
+        q18:"Dave, stop. Stop, will you? Stop, Dave. Will you stop Dave? Stop, Dave.",
+        q19:"I shall never forget that scream as long as I live...",
+        q20:"These arrows cut through the bone like a fat kid eats cake."
+    },
+    options: {
+        q1:["The GodFather ", "The Titanic ", " Jaws ", "The perfect storm "],
 
-for (let i = 0; i < questions.length; i++){
-    questions[i].innertext;
+        q2:["Citizen Kane", "CasaBlanca", "Gone With The Wind", "Seven Samurai"],
+
+        q3:["Eyes Without A Face", "Eternal Sunshine Of The Spotless Mind", "Tusk", "Audition"],
+
+        q4:["Goodfellas", "Good Burger", "There Will Be Blood", "Brink"],
+
+        q5: ["The Gambler", "Cool Hand Luke", "The Dark Knight", "No Country For Old Men"],
+
+        q6:["Saving Private Ryan", "War For The Planet Of The Apes", "Irreversible", "Fury"],
+
+        q7:["Drive", "You Were Never Really Here",  "Taxi Driver", "The Departed"],
+
+        q8:  ["Little Miss Sunshine", "Into The Wild", "Dead Poets Society", "Leaving Las Vegas"],
+
+        q9: ["The Little Mermaid", "Dude Where's My Car", "Bright", "Song Of The Sea"],
+
+        q10:["Analyze This", "Analyze That",   "Calvary", "Blade Runner"],
+
+        q11: ["First Reformed", "A Few Good Men", "Apacolypse Now", "Love Actually"],
+
+        q12:["Looper", "500 Days Of Summer", "The Hunger Games", "Call Me By Your Name"],
+
+        q13:["The Other Guys", "The Big Sick", "The Hangover", "Cabin In The Woods"],
+
+        q14: ["Dan In Real Life", "Splice", "Ex Machina", "The Terminator"],
+
+        q15:["Wonder Woman", "Tree Of Life", "Legion", "The Grey"],
+
+        q16:  ["Parenthood", "The Nice Guys", "Kramer vs Kramer", "Eyes Wide Shut"],
+
+        q17:["Ordinary People", "Sunset Blvd.", "Moonstruck", "Midsommar"],
+
+        q18:["2001: A Space Oddyssey", "Mike And Dave Need Wedding Dates", "Serenity", "You're Next"],
+
+        q19: ["The Fly", "The Ring", "The Texas Chainsaw Massacre", "Scream"],
+
+        q20:["Robin Hood Men In Tights", "Blade Trinity", "Mandy", "Deadpool 2"]
+    },
+        answers:{ 
+            q1: "Jaws",
+            q2: "Citizen Kane",
+            q3: "Eternal Sunshine Of The Spotless Mind",
+            q4: "There Will Be Blood",
+            q5: "No Country For Old Men",
+            q6: "War For The Planet Of The Apes",
+            q7: "Drive",
+            q8: "Dead Poets Society",
+            q9: "Song Of The Sea",
+            q10: "Calvary",
+            q11: "First Reformed",
+            q12: "Call Me By Your Name",
+            q13: "The Big Sick",
+            q14: "Ex Machina",
+            q15: "The Grey",
+            q16: "The Nice Guys",
+            q17: "Midsommar",
+            q18: "2001: A Space Oddyssey",
+            q19: "The Fly",
+            q20: "Mandy"
+        }
 }
+let score = 0;
+let app = document.querySelector("#question")
+let ans = document.querySelector("#answers");
+for (let i = 0; i <20; i++){
+    let butt = document.createElement("button");
+    let q = info.questions.q1;
+    app.innerHTML = q;
+    let a = info.options.q1;
+    ans.innerHTML = a;
+
+}
+
+console.log(info.questions.q1);
+console.log(info.options.q1);
+console.log(info.answers.q1);
 
 let button1 = document.querySelector("#one");
 let button2 = document.querySelector("#two");
