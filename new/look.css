@@ -86,6 +86,8 @@ h1{
 }
 #close{
    background-color: red;
+   margin-top: 0px;
+   margin-bottom: 4000px;
 }
 #modalLarge{
     color: blue;
