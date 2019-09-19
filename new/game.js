@@ -1,31 +1,25 @@
+//variables to find right and wrong and keep score.
 let button1 = document.querySelectorAll(".right");
 let score = 0;
 let otherbuttons = document.querySelectorAll(".Wrong");
 let all = document.querySelectorAll("button");
 
+//for loops to give buttons event listeners.
 for (let i = 0; i < otherbuttons.length; i++){
     otherbuttons[i].addEventListener("click", wrong);
 }
-//     // otherbuttons[i].addEventListener("click", disableClick);
-// }
-
 
 for (let j = 0; j < button1.length; j++){
     button1[j].addEventListener("click", correct);
 }
-// }
-// for (let h = 0; h < lastButton.length; h++){
-//     lastButton[h].addEventListener("click", final)
-// }
-// function color (){
-//      Q3.style.backgroundColor = "white";
-    
-// }
+
 // for (let w = 0; w < all.length -2; w++){
 //     all[w].addEventListener("mouseover", color)
 //     console.log(all[w]);
     
 // }
+
+//variables and assigning buttonse.
 let keeper = document.querySelector("#score");
 let submit = document.querySelector("#submit");
 let modal = document.querySelector("#modal");
@@ -35,13 +29,14 @@ submit.addEventListener("click", openModal);
 submit.addEventListener("click", final);
 close.addEventListener("click", closeModal);
 
+//functions for Modal.
 function openModal (){
     modal.style.display = "block";
 }
 function closeModal (){
     modal.style.display = "none";
 }
-
+//function for final score.
 function final(){
         if(score >= 15){
             modalLarge.innerText ="Look at you! You managed to \n\n get \n\n\n\ " + score *5 + "% correct. \n\n\n\ You're a movie hero"
@@ -54,9 +49,11 @@ function final(){
         }
      }
 
+
+//Functions that run depending on answer.
 function correct() {
     score +=1;
-    keeper.innerHTML = "Score:" + score;
+    keeper.innerHTML = "FADE IN: " + score;
     
 }
 
@@ -64,20 +61,7 @@ function wrong (){
 
 }
 
-// function disableClick (){
-
-
-    
-// }
-
-//figure out how to make it so there is no repeat answer. 
-
-//set it up so that the right answer highlights green or if you have time add a picture. 
-
-//figure out how to only trigger the check score when all buttons are clicked. 
-
-//create a modul for the final score. 
-
+//used Dom to select each button.
 let Q1 = document.querySelector("#one");
 let Q2 = document.querySelector("#two");
 let Q3 = document.querySelector("#three");
@@ -159,10 +143,12 @@ let Q78 = document.querySelector("#seventyeight");
 let Q79 = document.querySelector("#seventynine");
 let Q80 = document.querySelector("#eighty");
 
+
+
+//Created a function for each button.
 function one (){
     Q1.style.backgroundColor = "red";
     Q3.style.backgroundColor = "green";
-    Q3.style.color = "white";
     Q1.disabled = true;
     Q2.disabled = true;
     Q3.disabled = true;
