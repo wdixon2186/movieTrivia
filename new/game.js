@@ -53,7 +53,7 @@ function final(){
 //Functions that run depending on answer.
 function correct() {
     score +=1;
-    keeper.innerHTML = "FADE IN: " + score;
+    keeper.innerHTML = "Score: " + score;
     
 }
 

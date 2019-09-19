@@ -28,7 +28,11 @@ div{
     background: green;
     width: 606px;
     font-size: 24px;
-    font-weight: bold;
+	font-weight: 200;
+	font-family: 'Courier New', Courier, monospace;
+}
+#submit:hover{
+	background-color: orange;
 }
 #bottom{
     padding: 200px 0px 500px 0px;
@@ -53,7 +57,6 @@ div{
 	width: 550px;
 	border-radius: 2px;
 	margin: 150px auto;
-	box-shadow: 0 2px 2px rgba(o,0,0,.2);
 	padding: 2%;
 	line-height: 120%;
 	font-family: 'Arial';
@@ -103,19 +106,29 @@ section{
 h2{
 	text-align: justify;
 	font-family: 'Courier New', Courier, monospace;
-	font-weight: 250;
+	font-weight: 200;
 	font-size: 20px;
 }
 .char{
 	font-family: 'Courier New', Courier, monospace;
-	font-weight: 250;
+	font-weight: 200;
 	font-size: 20px;
 }
 .line{
 	font-family: 'Courier New', Courier, monospace;
-	font-weight: 250;
+	font-weight: 200;
 	font-size: 20px;
 	margin-left: 100px;
 	margin-right: 100px;
 	text-align: justify;
+	background-color: yellow;
+}
+.B{
+	background-color: aqua;
+}
+.num{
+	text-align: right;
+	margin-right: 40px;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 200;
 }
