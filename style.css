@@ -1,22 +1,30 @@
 body{
     text-align: center;
-    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/classics-1566494388.jpg?crop=0.502xw:1.00xh;0.260xw,0&resize=640:*");
+    /* background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/classics-1566494388.jpg?crop=0.502xw:1.00xh;0.260xw,0&resize=640:*"); */
     background-size: 1000px;
-    color: red;
+    /* color: red; */
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
 }
 button{
     width: 400px;
-    height: 200px;
-    background-color: yellow;
-    font-size: 75px;
+    height: 100px;
+    background-color: orange;
+    font-size: 24px;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
 }
-div{
-    background-color:black;
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    
+button:hover{
+    background-color: aqua;
+}
+#title{
+    margin-top: 250px;
+    text-decoration: underline;
+}
+p{
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px
 }
 
 /* Script title page. put the title on a time out and set the instructions. */
