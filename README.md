@@ -3,7 +3,8 @@ A trivia game that takes obscure and memorable quotes from movies, and challenge
 
 ## HOW TO PLAY
 The user is presented with a line from a wide released film, and then given four movie titles to try and guess which movie the line is from. If the user selects the right movie they get a point. The amount of points they recieve at the end determines what the final message says. When the user has answered all the questions they want to, they can click the "FADE OUT" button to submit their score and end the game. 
- ![preview](https://imgur.com/gallery/TGZSrCy)
+
+![Image of site](https://imgur.com/gallery/TGZSrCy)
 
 ## INSTALLATION INSTRUCTIONS
 There are six files needed to be downloaded in order for the trivia to work. Once downloaded the files are linked together, so all the user has to do is open "_index.html_" and the game should begin. 
