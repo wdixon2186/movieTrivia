@@ -19,6 +19,8 @@ There are six files needed to be downloaded in order for the trivia to work. Onc
         _please.css_
 open _index.html_ once everything is downloaded.
 
+The game can also be accessed [here](https://wdixon2186.github.io/movieTrivia/)
+
 ## THOUGHT PROCESS
 **ON HTML-** while working with HTML I decided to create the outline for my entire game. I made sure to take a markup approach to include everything in tags, and placed each question along with it's options into specific Divs. Later I needed to work on specifics so I had to include different tags and ID names in order to access them in my Javascript. Most of the HTML was pretty simple. I just created divs that contained p tags and buttons inside of them. At the bottom of the page I created a section for a modal that would pop up when the game finishes.  
 
