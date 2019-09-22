@@ -13,12 +13,6 @@ for (let j = 0; j < button1.length; j++){
     button1[j].addEventListener("click", correct);
 }
 
-// for (let w = 0; w < all.length -2; w++){
-//     all[w].addEventListener("mouseover", color)
-//     console.log(all[w]);
-    
-// }
-
 //variables and assigning buttonse.
 let keeper = document.querySelector("#score");
 let submit = document.querySelector("#submit");
