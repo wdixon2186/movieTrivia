@@ -1,3 +1,4 @@
+<!-- Awesome readme! Really detailed! -->
 ## MOVIE TRIVIA
 A trivia game that takes obscure and memorable quotes from movies, and challenges the user on their knowledge.
 
