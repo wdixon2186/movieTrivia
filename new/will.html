@@ -1,417 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="look.css">
-</head>
-<body>
+    <link rel="stylesheet" href="look.css" />
+  </head>
+  <body>
+    <!-- I would name this file game.html or something along that line! -->
     <div id="scoreDiv"></div>
-<h1 id="score">
-    Score: 
-</h1>
-<section>
-    <div id="Q1">
-    <p class="int">INT. QUESTION 1 - DAY </p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line">You're going to need a bigger boat.</p>
+    <h1 id="score">
+      Score:
+    </h1>
+    <section>
+      <div id="Q1">
+        <p class="int">INT. QUESTION 1 - DAY</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line">You're going to need a bigger boat.</p>
+        <!-- I would use lowercase names for html/css -- it isn't case sensitive! -->
         <button id="one" class="Wrong">The GodFather</button>
-    <br>
-
+        <br />
+        <!-- Instead of classes for right and wrong, I'd use data attributes! -->
         <button id="two" class="Wrong">Titanic</button>
-    <br>
+        <br />
 
         <button id="three" class="right">Jaws</button>
-        
-<br>
+
+        <br />
         <button id="four" class="Wrong">The Perfect Storm</button>
-    </div>
+      </div>
 
-    <div id="Q2">
-    <p class="int">EXT. QUESTION 2 - DAY </p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line B"> "Rosebud."</p>
+      <div id="Q2">
+        <p class="int">EXT. QUESTION 2 - DAY</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line B">"Rosebud."</p>
 
-            <button id="five" class="right">Citizen Kane</button>
-        <br>
-    
-            <button id="six" class="Wrong">CasaBlanca</button>
-            <br>
-    
-            <button id="seven"  class="Wrong">Gone With The Wind</button>
-            <br>
-    
-            <button id="eight" class="Wrong">Seven Samurai</button>
-        
-        </div>
+        <button id="five" class="right">Citizen Kane</button>
+        <br />
 
-        <div id="Q3">
-    <p class="int">INT. QUESTION 3 - NIGHT </p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line"> "Well, technically speaking, the operation is brain damage, but it's on a par with a night of heavy drinking. Nothing you'll miss." </p>
+        <button id="six" class="Wrong">CasaBlanca</button>
+        <br />
 
-    
-         <button id="nine" class="Wrong">Eyes without a face</button>
-        
-         <br>
-         <button id="ten" class="right">Eternal Sunshine of The Spotless Mind</button>
-         <br>
-    
-         <button id="eleven" class="Wrong">Tusk</button>
-         <br>
-    
-         <button id="twelve" class="Wrong">Audition</button>
-        
-        </div>
+        <button id="seven" class="Wrong">Gone With The Wind</button>
+        <br />
 
-        <div id="Q4">
-    <p class="int">INT. QUESTION 4 - DAY </p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line B">  "I... drink... your... milkshake!" </p>
-    
-            <button id="thirteen" class="Wrong">Goodfellas</button>
-            <br>
-    
-            <button id="fourteen" class="Wrong">Good Burger</button>
-            <br>
-    
-                <button id="fifteen" class="right">There Will Be Blood</button>
-                <br>
-    
-            <button id="sixteen" class="Wrong">Brink</button>
-        
-        </div>
+        <button id="eight" class="Wrong">Seven Samurai</button>
+      </div>
 
-        <div id="Q5">
-    <p class="int">INT. QUESTION 5 - NIGHT </p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line"> "What's the most you've ever lost on a coin toss?" </p>
-    
-            <button id="seventeen" class="Wrong">The Gambler</button>
-        
-            <br>
-            <button id="eighteen" class="Wrong">Cool Hand Luke</button>
-        
-            <br>
-            <button id="nineteen" class="Wrong">The Dark Knight</button>
-        
-            <br>
-                <button id="twenty" class="right">No Country for Old Men</button>
-            
-            </div>
-        </section>
-        <section>
-                <p class="num">2.</p>
-            <div id="Q6">
-    <p class="int">EXT. QUESTION 6 - DAY</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line B"> "There are times when it is necessary to abandon our humanity to save humanity." </p>
-    
-            <button id="twentyone" class="Wrong">Saving Private Ryan</button>
-            <br>
-    
-                <button id="twentytwo" class="right">War for The Planet of The Apes</button>
-                <br>
-    
-            <button id="twentythree" class="Wrong">Irrevesible</button>
-            <br>
-    
-            <button id="twentyfour" class="Wrong">Fury</button>
-            <br>
+      <div id="Q3">
+        <p class="int">INT. QUESTION 3 - NIGHT</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line">
+          "Well, technically speaking, the operation is brain damage, but it's
+          on a par with a night of heavy drinking. Nothing you'll miss."
+        </p>
 
-    <!-- Level 2 -->
-        
-        </div>
+        <button id="nine" class="Wrong">Eyes without a face</button>
 
-        <div id="Q7">
-    <p class="int">INT. QUESTION 7 - NIGHT</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line"> "Now you just got a little boy's father killed. You almost got us killed. And now you're lying to me. So how about this: from now on, every word out of your mouth is the truth, or I'm gonna hurt you." </p>
+        <br />
+        <button id="ten" class="right">
+          Eternal Sunshine of The Spotless Mind
+        </button>
+        <br />
 
-            <button id="twentyfive" class="right">Drive</button>
-        
-            <br>
-            <button id="twentysix" class="Wrong">You Were Never Really Here</button>
-            <br>
-    
-            <button id="twentyseven" class="Wrong">Taxi Driver</button>
-            <br>
-    
-            <button id="twentyeight" class="Wrong">The Departed</button>
-        </div>
+        <button id="eleven" class="Wrong">Tusk</button>
+        <br />
 
-        <div id="Q8">
-    <p class="int">EXT. QUESTION 8 - DAY</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line B"> "I went to the woods because I wanted to live deliberately. I wanted to live deep and suck out all the marrow of life. To put to rout all that was not life; and not, when I had come to die, discover that I had not lived." </p>
-    
-            <button id="twentynine" class="Wrong">Little Miss Sunshine</button>
-            <br>
-    
-            <button id="thirty" class="Wrong">Into The Wild</button>
-            <br>
-    
-                <button id="thirtyone" class="right">Dead Poets Society</button>
-                <br>
-    
-            <button id="thirtytwo" class="Wrong">Leaving Las Vegas</button>
-        
-        </div>
+        <button id="twelve" class="Wrong">Audition</button>
+      </div>
 
-        <div id="Q9">
-    <p class="int">EXT. QUESTION 9 - NIGHT</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line"> "are you really a selkie?" </p>
-    
-            <button id="thirtythree" class="Wrong">The Little Mermaid</button>
-        
-            <br>
-            <button id="thirtyfour" class="Wrong">Dude Where's My Car?</button>
-        
-            <br>
-            <button id="thirtyfive" class="Wrong">Bright</button>
-            <br>
-    
-                <button id="thirtysix" class="right">Song of the Sea</button>
-            </div>
-            <div id="Q10">
+      <div id="Q4">
+        <p class="int">INT. QUESTION 4 - DAY</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line B">"I... drink... your... milkshake!"</p>
 
-    <p class="int">INT. QUESTION 10 - DAY</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line B"> "I think forgiveness has been highly underrated." </p>
-    
-            <button id="thirtyseven" class="Wrong">Analyze This</button>
-        
-            <br>
-            <button id="thirtyeight" class="Wrong">Analyze That</button>
-            <br>
-    
-                <button id="thirtynine" class="right">Calvary</button>
-            
-                <br>
-            <button id="fourty" class="Wrong">Blade Runner</button>
-        
-        </div>
+        <button id="thirteen" class="Wrong">Goodfellas</button>
+        <br />
+
+        <button id="fourteen" class="Wrong">Good Burger</button>
+        <br />
+
+        <button id="fifteen" class="right">There Will Be Blood</button>
+        <br />
+
+        <button id="sixteen" class="Wrong">Brink</button>
+      </div>
+
+      <div id="Q5">
+        <p class="int">INT. QUESTION 5 - NIGHT</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line">"What's the most you've ever lost on a coin toss?"</p>
+
+        <button id="seventeen" class="Wrong">The Gambler</button>
+
+        <br />
+        <button id="eighteen" class="Wrong">Cool Hand Luke</button>
+
+        <br />
+        <button id="nineteen" class="Wrong">The Dark Knight</button>
+
+        <br />
+        <button id="twenty" class="right">No Country for Old Men</button>
+      </div>
     </section>
     <section>
-            <p class="num">3.</p>
+      <p class="num">2.</p>
+      <div id="Q6">
+        <p class="int">EXT. QUESTION 6 - DAY</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <!-- Use descriptive class names! -->
+        <p class="line B">
+          "There are times when it is necessary to abandon our humanity to save
+          humanity."
+        </p>
 
-        <div id="Q11">
-    <p class="int">EXT. QUESTION 11 - DAY</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line"> "Courage is the solution to despair, reason provides no answers. I can't know what the future will bring; we have to choose despite uncertainty. Wisdom is holding two contradictory truths in our mind, simultaneously, Hope and despair. A life without despair is a life without hope. Holding these two ideas in our head is life itself."</p>
+        <button id="twentyone" class="Wrong">Saving Private Ryan</button>
+        <br />
 
-            <button id="fourtyone" class="right">First Reformed</button>
-            <br>
-            <button id="fourtytwo" class="Wrong">A Few Good Men</button>
-        
-            <br>
-            <button id="fourtythree" class="Wrong">Apacolypse Now</button>
-        
-            <br>
-            <button id="fourtyfour" class="Wrong">Love Actually</button>
-        </div>
+        <button id="twentytwo" class="right">
+          War for The Planet of The Apes
+        </button>
+        <br />
 
-        <div id="Q12">
-    <p class="int">INT. QUESTION 12 - NIGHT</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line B"> "When you least expect it, nature has cunning ways of finding our weakest spot." </p>
-    
-            <button id="fourtyfive" class="Wrong">Looper</button>
-            <br>
-    
-            <button id="fourtysix" class="Wrong">500 Days of Summer</button>
-        
-            <br>
-            <button id="fourtyseven" class="Wrong">The Hunger Games</button>
-            <br>
-    
-                <button id="fourtyeight" class="right">Call Me By Your Name</button>
-            
-            </div>
+        <button id="twentythree" class="Wrong">Irrevesible</button>
+        <br />
 
-            <div id="Q13">
-    <p class="int">INT. QUESTION 13 - NIGHT</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line"> "He's like Daniel Day-Lewis except he sucks." </p>
-    
-            <button id="fourtynine" class="Wrong">The Other Guys</button>
-        
-            <br>
-                <button id="fifty" class="right">The Big Sick</button>
-            
-                <br>
-            <button id="fiftyone" class="Wrong">The Hangover</button>
-        
-            <br>
-            <button id="fiftytwo" class="Wrong">Cabin In The Woods</button>
-        
+        <button id="twentyfour" class="Wrong">Fury</button>
+        <br />
 
-            </div>
+        <!-- Level 2 -->
+      </div>
 
-            <div id="Q14">
+      <div id="Q7">
+        <p class="int">INT. QUESTION 7 - NIGHT</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line">
+          "Now you just got a little boy's father killed. You almost got us
+          killed. And now you're lying to me. So how about this: from now on,
+          every word out of your mouth is the truth, or I'm gonna hurt you."
+        </p>
 
-    <p class="int">INT. QUESTION 14 - DAY</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line B"> "Isn't it strange, to create something that hates you?" </p>
-    
-            <button id="fiftythree" class="Wrong">Dan In Real Life</button>
-        
-            <br>
-            <button id="fiftyfour" class="Wrong">Splice</button>
-            <br>
-    
-                <button id="fiftyfive" class="right">Ex Machina</button>
-                <br>
-    
-            <button id="fiftysix" class="Wrong">The Terminator</button>
-        
-            </div>
+        <button id="twentyfive" class="right">Drive</button>
 
-            <div id="Q15">
-    <p class="int">EXT. QUESTION 15 - DAY</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line"> "I don't walk through this world with fear in my heart." </p>
-    
-            <button id="fiftyseven" class="Wrong">Wonder Woman</button>
-            <br>
-    
-            <button id="fiftyeight" class="Wrong">Tree of Life</button>
-        
-            <br>
-            <button id="fiftynine" class="Wrong">Legion</button>
-        
-            <br>
-                <button id="sixty" class="right">The Grey</button>
+        <br />
+        <button id="twentysix" class="Wrong">You Were Never Really Here</button>
+        <br />
 
-            </div>
+        <button id="twentyseven" class="Wrong">Taxi Driver</button>
+        <br />
 
-            
-            </section>
-            <section>
-                    <div id="Q16">
-                <p class="num">4.</p>
-    <p class="int">EXT. QUESTION 16 - NIGHT</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line B"> "Marriage is buying a house for someone you hate." </p>
-    
-            <button id="sixtyone" class="Wrong">Parenthood</button>
-            <br>
-    
-                <button id="sixtytwo" class="right">The Nice Guys</button>
-                <br>
-    
-            <button id="sixtythree" class="Wrong">Kramer vs Kramer</button>
-            <br>
-    
-            <button id="sixtyfour" class="Wrong">Eyes Wide Shut</button>
-        
-        </div>
+        <button id="twentyeight" class="Wrong">The Departed</button>
+      </div>
 
-        <div id="Q17">
-    <p class="int">INT. QUESTION 17 - DAY</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line"> "He's my good friend and I like him, but... Dani, do you feel held by him? Does he feel like home to you?" </p>
-    
-            <button id="sixtyfive" class="Wrong">Ordinary People</button>
-            <br>
-    
-            <button id="sixtysix" class="Wrong">Sunset Blvd.</button>
-            <br>
-    
-            <button id="sixtyseven" class="Wrong">Moonstruck</button>
-        
-            <br>
-                <button id="sixtyeight" class="right">Midsommar</button>
-            
-            </div>
+      <div id="Q8">
+        <p class="int">EXT. QUESTION 8 - DAY</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line B">
+          "I went to the woods because I wanted to live deliberately. I wanted
+          to live deep and suck out all the marrow of life. To put to rout all
+          that was not life; and not, when I had come to die, discover that I
+          had not lived."
+        </p>
 
-            <div id="Q18">
-    <p class="int">INT. QUESTION 18 - NIGHT</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line B"> "Dave, stop. Stop, will you? Stop, Dave. Will you stop Dave? Stop, Dave." </p>
+        <button id="twentynine" class="Wrong">Little Miss Sunshine</button>
+        <br />
 
-            <button id="sixtynine" class="right">2001: A space Oddyssey</button>
-            <br>
+        <button id="thirty" class="Wrong">Into The Wild</button>
+        <br />
 
-            <button id="seventy" class="Wrong">Mike and Dave Need Wedding Dates.</button>
-        
-    <br>
-            <button id="seventyone" class="Wrong">Serenity</button>
-            <br>
-    
-            <button id="seventytwo" class="Wrong">You're Next</button>
-        
-        </div>
+        <button id="thirtyone" class="right">Dead Poets Society</button>
+        <br />
 
-        <div id="Q19">
-    <p class="int">EXT. QUESTION 19 - DAY</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line"> "I shall never forget that scream as long as I live..." </p>
+        <button id="thirtytwo" class="Wrong">Leaving Las Vegas</button>
+      </div>
 
-            <button id="seventythree" class="right">The Fly</button>
-            <br>
-    
-            <button id="seventyfour" class="Wrong">The Ring</button>
-            <br>
-    
-            <button id="seventyfive" class="Wrong"> The Texas Chainsaw Massacre</button>
-            <br>
-    
-            <button id="seventysix" class="Wrong">Scream</button>
-        
-        </div>
+      <div id="Q9">
+        <p class="int">EXT. QUESTION 9 - NIGHT</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line">"are you really a selkie?"</p>
 
-        <div id="Q20">
-    <p class="int">INT QUESTION 20 - DAY</p>
-    <h2>What movie had the line...</h2>
-    <p class="char">CHARACTER</p>
-    <p class="line B"> "These arrows cut through the bone like a fat kid eats cake." </p>
-    
-            <button id="seventyseven" class="Wrong last">Robin Hood Men In Tights</button>
-        
-            <br>
-            <button id="seventyeight" class="Wrong last">Blade Trinity</button>
-            <br>
-    
-                <button id="seventynine" class="right last">Mandy</button>
-            
-                <br>
-            <button id="eighty" class="Wrong last">Deadpool 2</button>
-        </div>
+        <button id="thirtythree" class="Wrong">The Little Mermaid</button>
+
+        <br />
+        <button id="thirtyfour" class="Wrong">Dude Where's My Car?</button>
+
+        <br />
+        <button id="thirtyfive" class="Wrong">Bright</button>
+        <br />
+
+        <button id="thirtysix" class="right">Song of the Sea</button>
+      </div>
+      <div id="Q10">
+        <p class="int">INT. QUESTION 10 - DAY</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line B">"I think forgiveness has been highly underrated."</p>
+
+        <button id="thirtyseven" class="Wrong">Analyze This</button>
+
+        <br />
+        <button id="thirtyeight" class="Wrong">Analyze That</button>
+        <br />
+
+        <button id="thirtynine" class="right">Calvary</button>
+
+        <br />
+        <button id="fourty" class="Wrong">Blade Runner</button>
+      </div>
     </section>
-        <div id="bottom">
-            <button id="submit">FADE OUT:</button>
-        </div>
+    <section>
+      <p class="num">3.</p>
 
-        <div id="modal">
-                <div id="modalTextbox">
-                    <h1 id=modalLarge>info goes here.</h1>
-                    <button id="close" class = "modal-buttons">Close</button>
-            </div>
-            </div>
-      
-    <script src = "game.js"></script>
-</body>
+      <div id="Q11">
+        <p class="int">EXT. QUESTION 11 - DAY</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line">
+          "Courage is the solution to despair, reason provides no answers. I
+          can't know what the future will bring; we have to choose despite
+          uncertainty. Wisdom is holding two contradictory truths in our mind,
+          simultaneously, Hope and despair. A life without despair is a life
+          without hope. Holding these two ideas in our head is life itself."
+        </p>
+
+        <button id="fourtyone" class="right">First Reformed</button>
+        <br />
+        <button id="fourtytwo" class="Wrong">A Few Good Men</button>
+
+        <br />
+        <button id="fourtythree" class="Wrong">Apacolypse Now</button>
+
+        <br />
+        <button id="fourtyfour" class="Wrong">Love Actually</button>
+      </div>
+
+      <div id="Q12">
+        <p class="int">INT. QUESTION 12 - NIGHT</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line B">
+          "When you least expect it, nature has cunning ways of finding our
+          weakest spot."
+        </p>
+
+        <button id="fourtyfive" class="Wrong">Looper</button>
+        <br />
+
+        <button id="fourtysix" class="Wrong">500 Days of Summer</button>
+
+        <br />
+        <button id="fourtyseven" class="Wrong">The Hunger Games</button>
+        <br />
+
+        <button id="fourtyeight" class="right">Call Me By Your Name</button>
+      </div>
+
+      <div id="Q13">
+        <p class="int">INT. QUESTION 13 - NIGHT</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line">"He's like Daniel Day-Lewis except he sucks."</p>
+
+        <button id="fourtynine" class="Wrong">The Other Guys</button>
+
+        <br />
+        <button id="fifty" class="right">The Big Sick</button>
+
+        <br />
+        <button id="fiftyone" class="Wrong">The Hangover</button>
+
+        <br />
+        <button id="fiftytwo" class="Wrong">Cabin In The Woods</button>
+      </div>
+
+      <div id="Q14">
+        <p class="int">INT. QUESTION 14 - DAY</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line B">
+          "Isn't it strange, to create something that hates you?"
+        </p>
+
+        <button id="fiftythree" class="Wrong">Dan In Real Life</button>
+
+        <br />
+        <button id="fiftyfour" class="Wrong">Splice</button>
+        <br />
+
+        <button id="fiftyfive" class="right">Ex Machina</button>
+        <br />
+
+        <button id="fiftysix" class="Wrong">The Terminator</button>
+      </div>
+
+      <div id="Q15">
+        <p class="int">EXT. QUESTION 15 - DAY</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line">
+          "I don't walk through this world with fear in my heart."
+        </p>
+
+        <button id="fiftyseven" class="Wrong">Wonder Woman</button>
+        <br />
+
+        <button id="fiftyeight" class="Wrong">Tree of Life</button>
+
+        <br />
+        <button id="fiftynine" class="Wrong">Legion</button>
+
+        <br />
+        <button id="sixty" class="right">The Grey</button>
+      </div>
+    </section>
+    <section>
+      <div id="Q16">
+        <p class="num">4.</p>
+        <p class="int">EXT. QUESTION 16 - NIGHT</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line B">"Marriage is buying a house for someone you hate."</p>
+
+        <button id="sixtyone" class="Wrong">Parenthood</button>
+        <br />
+
+        <button id="sixtytwo" class="right">The Nice Guys</button>
+        <br />
+
+        <button id="sixtythree" class="Wrong">Kramer vs Kramer</button>
+        <br />
+
+        <button id="sixtyfour" class="Wrong">Eyes Wide Shut</button>
+      </div>
+
+      <div id="Q17">
+        <p class="int">INT. QUESTION 17 - DAY</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line">
+          "He's my good friend and I like him, but... Dani, do you feel held by
+          him? Does he feel like home to you?"
+        </p>
+
+        <button id="sixtyfive" class="Wrong">Ordinary People</button>
+        <br />
+
+        <button id="sixtysix" class="Wrong">Sunset Blvd.</button>
+        <br />
+
+        <button id="sixtyseven" class="Wrong">Moonstruck</button>
+
+        <br />
+        <button id="sixtyeight" class="right">Midsommar</button>
+      </div>
+
+      <div id="Q18">
+        <p class="int">INT. QUESTION 18 - NIGHT</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line B">
+          "Dave, stop. Stop, will you? Stop, Dave. Will you stop Dave? Stop,
+          Dave."
+        </p>
+
+        <button id="sixtynine" class="right">2001: A space Oddyssey</button>
+        <br />
+
+        <button id="seventy" class="Wrong">
+          Mike and Dave Need Wedding Dates.
+        </button>
+
+        <br />
+        <button id="seventyone" class="Wrong">Serenity</button>
+        <br />
+
+        <button id="seventytwo" class="Wrong">You're Next</button>
+      </div>
+
+      <div id="Q19">
+        <p class="int">EXT. QUESTION 19 - DAY</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line">
+          "I shall never forget that scream as long as I live..."
+        </p>
+
+        <button id="seventythree" class="right">The Fly</button>
+        <br />
+
+        <button id="seventyfour" class="Wrong">The Ring</button>
+        <br />
+
+        <button id="seventyfive" class="Wrong">
+          The Texas Chainsaw Massacre
+        </button>
+        <br />
+
+        <button id="seventysix" class="Wrong">Scream</button>
+      </div>
+
+      <div id="Q20">
+        <p class="int">INT QUESTION 20 - DAY</p>
+        <h2>What movie had the line...</h2>
+        <p class="char">CHARACTER</p>
+        <p class="line B">
+          "These arrows cut through the bone like a fat kid eats cake."
+        </p>
+
+        <button id="seventyseven" class="Wrong last">
+          Robin Hood Men In Tights
+        </button>
+
+        <br />
+        <button id="seventyeight" class="Wrong last">Blade Trinity</button>
+        <br />
+
+        <button id="seventynine" class="right last">Mandy</button>
+
+        <br />
+        <button id="eighty" class="Wrong last">Deadpool 2</button>
+      </div>
+    </section>
+    <div id="bottom">
+      <button id="submit">FADE OUT:</button>
+    </div>
+
+    <div id="modal">
+      <div id="modalTextbox">
+        <h1 id="modalLarge">info goes here.</h1>
+        <button id="close" class="modal-buttons">Close</button>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
 </html>

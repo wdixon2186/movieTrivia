@@ -5,12 +5,14 @@ let otherbuttons = document.querySelectorAll(".Wrong");
 let all = document.querySelectorAll("button");
 
 //for loops to give buttons event listeners.
-for (let i = 0; i < otherbuttons.length; i++){
-    otherbuttons[i].addEventListener("click", wrong);
+
+// I would keep going in this direction!!! Looks like you're very close to getting this. If you want help, please reach out! Would love to help refactor this to be more DRY
+for (let i = 0; i < otherbuttons.length; i++) {
+  otherbuttons[i].addEventListener("click", wrong);
 }
 
-for (let j = 0; j < button1.length; j++){
-    button1[j].addEventListener("click", correct);
+for (let j = 0; j < button1.length; j++) {
+  button1[j].addEventListener("click", correct);
 }
 
 //variables and assigning buttonse.
@@ -24,36 +26,40 @@ submit.addEventListener("click", final);
 close.addEventListener("click", closeModal);
 
 //functions for Modal.
-function openModal (){
-    modal.style.display = "block";
+function openModal() {
+  // I would use css classes and toggle them instead of writing css in your JS like this
+  modal.style.display = "block";
 }
-function closeModal (){
-    modal.style.display = "none";
+function closeModal() {
+  modal.style.display = "none";
 }
 //function for final score.
-function final(){
-        if(score >= 15){
-            modalLarge.innerText ="Look at you! You managed to \n\n get \n\n\n\ " + score *5 + "% correct. \n\n\n\ You're a movie hero"
-        }
-        else if(score >= 10){
-            modalLarge.innerText ="You managed to get \n\n\n\ " + score * 5 + "%  correct. \n\n\n\ you need some work.";
-        }
-        else{
-            modalLarge.innerText = "You managed to get \n\n\n\ " + score * 5 + "% correct. \n\n\n\ Have you even seen a \n\n movie?"
-        }
-     }
-
+function final() {
+  if (score >= 15) {
+    modalLarge.innerText =
+      "Look at you! You managed to \n\n get \n\n\n " +
+      score * 5 +
+      "% correct. \n\n\n You're a movie hero";
+  } else if (score >= 10) {
+    modalLarge.innerText =
+      "You managed to get \n\n\n " +
+      score * 5 +
+      "%  correct. \n\n\n you need some work.";
+  } else {
+    modalLarge.innerText =
+      "You managed to get \n\n\n " +
+      score * 5 +
+      "% correct. \n\n\n Have you even seen a \n\n movie?";
+  }
+}
 
 //Functions that run depending on answer.
 function correct() {
-    score +=1;
-    keeper.innerHTML = "Score: " + score;
-    
+  score += 1;
+  keeper.innerHTML = "Score: " + score;
 }
 
-function wrong (){
-
-}
+function wrong() {}
 
 //used Dom to select each button.
 let Q1 = document.querySelector("#one");
@@ -137,786 +143,784 @@ let Q78 = document.querySelector("#seventyeight");
 let Q79 = document.querySelector("#seventynine");
 let Q80 = document.querySelector("#eighty");
 
-
-
 //Created a function for each button.
-function one (){
-    Q1.style.backgroundColor = "red";
-    Q3.style.backgroundColor = "green";
-    Q1.disabled = true;
-    Q2.disabled = true;
-    Q3.disabled = true;
-    Q4. disabled = true;
+function one() {
+  Q1.style.backgroundColor = "red";
+  Q3.style.backgroundColor = "green";
+  Q1.disabled = true;
+  Q2.disabled = true;
+  Q3.disabled = true;
+  Q4.disabled = true;
 }
 
 Q1.addEventListener("click", one);
 
-function  two (){
-    Q2.style.backgroundColor = "red";
-    Q3.style.backgroundColor = "green";
-    Q1.disabled = true;
-    Q2.disabled = true;
-    Q3.disabled = true;
-    Q4. disabled = true;
+function two() {
+  Q2.style.backgroundColor = "red";
+  Q3.style.backgroundColor = "green";
+  Q1.disabled = true;
+  Q2.disabled = true;
+  Q3.disabled = true;
+  Q4.disabled = true;
 }
 Q2.addEventListener("click", two);
 
-function  three(){
-    Q3.style.backgroundColor = "green";
-    Q1.disabled = true;
-    Q2.disabled = true;
-    Q3.disabled = true;
-    Q4. disabled = true;
+function three() {
+  Q3.style.backgroundColor = "green";
+  Q1.disabled = true;
+  Q2.disabled = true;
+  Q3.disabled = true;
+  Q4.disabled = true;
 }
 Q3.addEventListener("click", three);
 
-function  four(){
-    Q4.style.backgroundColor = "red";
-    Q3.style.backgroundColor = "green";
-    Q1.disabled = true;
-    Q2.disabled = true;
-    Q3.disabled = true;
-    Q4. disabled = true;
+function four() {
+  Q4.style.backgroundColor = "red";
+  Q3.style.backgroundColor = "green";
+  Q1.disabled = true;
+  Q2.disabled = true;
+  Q3.disabled = true;
+  Q4.disabled = true;
 }
 Q4.addEventListener("click", four);
 
-function  five(){
-    Q5.style.backgroundColor = "green"
-    Q5.disabled = true;
-    Q6.disabled = true;
-    Q7.disabled = true;
-    Q8.disabled = true;
+function five() {
+  Q5.style.backgroundColor = "green";
+  Q5.disabled = true;
+  Q6.disabled = true;
+  Q7.disabled = true;
+  Q8.disabled = true;
 }
 Q5.addEventListener("click", five);
 
-function  six(){
-    Q6.style.backgroundColor = "red";
-    Q5.style.backgroundColor = "green";
-    Q5.disabled = true;
-    Q6.disabled = true;
-    Q7.disabled = true;
-    Q8.disabled = true;
+function six() {
+  Q6.style.backgroundColor = "red";
+  Q5.style.backgroundColor = "green";
+  Q5.disabled = true;
+  Q6.disabled = true;
+  Q7.disabled = true;
+  Q8.disabled = true;
 }
 Q6.addEventListener("click", six);
 
-function  seven(){
-    Q7.style.backgroundColor = "red";
-    Q5.style.backgroundColor = "green";
-    Q5.disabled = true;
-    Q6.disabled = true;
-    Q7.disabled = true;
-    Q8.disabled = true;
+function seven() {
+  Q7.style.backgroundColor = "red";
+  Q5.style.backgroundColor = "green";
+  Q5.disabled = true;
+  Q6.disabled = true;
+  Q7.disabled = true;
+  Q8.disabled = true;
 }
 Q7.addEventListener("click", seven);
 
-function  eight(){
-    Q8.style.backgroundColor = "red";
-    Q5.style.backgroundColor = "green";
-    Q5.disabled = true;
-    Q6.disabled = true;
-    Q7.disabled = true;
-    Q8.disabled = true;
+function eight() {
+  Q8.style.backgroundColor = "red";
+  Q5.style.backgroundColor = "green";
+  Q5.disabled = true;
+  Q6.disabled = true;
+  Q7.disabled = true;
+  Q8.disabled = true;
 }
 Q8.addEventListener("click", eight);
 
-function  nine(){
-    Q9.style.backgroundColor = "red";
-    Q10.style.backgroundColor = "green";
-    Q9.disabled = true;
-    Q10.disabled = true;
-    Q11.disabled = true;
-    Q12.disabled = true;
+function nine() {
+  Q9.style.backgroundColor = "red";
+  Q10.style.backgroundColor = "green";
+  Q9.disabled = true;
+  Q10.disabled = true;
+  Q11.disabled = true;
+  Q12.disabled = true;
 }
 Q9.addEventListener("click", nine);
 
-function  ten(){
-    Q10.style.backgroundColor = "green";
-    Q9.disabled = true;
-    Q10.disabled = true;
-    Q11.disabled = true;
-    Q12.disabled = true;
+function ten() {
+  Q10.style.backgroundColor = "green";
+  Q9.disabled = true;
+  Q10.disabled = true;
+  Q11.disabled = true;
+  Q12.disabled = true;
 }
 Q10.addEventListener("click", ten);
 
-function  eleven(){
-    Q11.style.backgroundColor = "red";
-    Q10.style.backgroundColor = "green";
-    Q9.disabled = true;
-    Q10.disabled = true;
-    Q11.disabled = true;
-    Q12.disabled = true;
+function eleven() {
+  Q11.style.backgroundColor = "red";
+  Q10.style.backgroundColor = "green";
+  Q9.disabled = true;
+  Q10.disabled = true;
+  Q11.disabled = true;
+  Q12.disabled = true;
 }
 Q11.addEventListener("click", eleven);
 
-function  twelve(){
-    Q12.style.backgroundColor = "red";
-    Q10.style.backgroundColor = "green";
-    Q9.disabled = true;
-    Q10.disabled = true;
-    Q11.disabled = true;
-    Q12.disabled = true;
+function twelve() {
+  Q12.style.backgroundColor = "red";
+  Q10.style.backgroundColor = "green";
+  Q9.disabled = true;
+  Q10.disabled = true;
+  Q11.disabled = true;
+  Q12.disabled = true;
 }
 Q12.addEventListener("click", twelve);
 
-function  thirteen(){
-    Q13.style.backgroundColor = "red";
-    Q15.style.backgroundColor = "green";
-    Q13.disabled = true;
-    Q14.disabled = true;
-    Q15.disabled = true;
-    Q16.disabled = true;
+function thirteen() {
+  Q13.style.backgroundColor = "red";
+  Q15.style.backgroundColor = "green";
+  Q13.disabled = true;
+  Q14.disabled = true;
+  Q15.disabled = true;
+  Q16.disabled = true;
 }
 Q13.addEventListener("click", thirteen);
 
-function  fourteen(){
-    Q14.style.backgroundColor = "red";
-    Q15.style.backgroundColor = "green";
-    Q13.disabled = true;
-    Q14.disabled = true;
-    Q15.disabled = true;
-    Q16.disabled = true;
+function fourteen() {
+  Q14.style.backgroundColor = "red";
+  Q15.style.backgroundColor = "green";
+  Q13.disabled = true;
+  Q14.disabled = true;
+  Q15.disabled = true;
+  Q16.disabled = true;
 }
 Q14.addEventListener("click", fourteen);
 
-function  fifteen(){
-    Q15.style.backgroundColor = "green";
-    Q13.disabled = true;
-    Q14.disabled = true;
-    Q15.disabled = true;
-    Q16.disabled = true;
+function fifteen() {
+  Q15.style.backgroundColor = "green";
+  Q13.disabled = true;
+  Q14.disabled = true;
+  Q15.disabled = true;
+  Q16.disabled = true;
 }
 Q15.addEventListener("click", fifteen);
 
-function  sixteen(){
-    Q16.style.backgroundColor = "red";
-    Q15.style.backgroundColor = "green";
-    Q13.disabled = true;
-    Q14.disabled = true;
-    Q15.disabled = true;
-    Q16.disabled = true;
+function sixteen() {
+  Q16.style.backgroundColor = "red";
+  Q15.style.backgroundColor = "green";
+  Q13.disabled = true;
+  Q14.disabled = true;
+  Q15.disabled = true;
+  Q16.disabled = true;
 }
 Q16.addEventListener("click", sixteen);
 
-function  seventeen(){
-    Q17.style.backgroundColor = "red";
-    Q20.style.backgroundColor = "green";
-    Q17.disabled = true;
-    Q18.disabled = true;
-    Q19.disabled = true;
-    Q20.disabled = true;
+function seventeen() {
+  Q17.style.backgroundColor = "red";
+  Q20.style.backgroundColor = "green";
+  Q17.disabled = true;
+  Q18.disabled = true;
+  Q19.disabled = true;
+  Q20.disabled = true;
 }
 Q17.addEventListener("click", seventeen);
 
-function  eighteen(){
-    Q18.style.backgroundColor = "red";
-    Q20.style.backgroundColor = "green";
-    Q17.disabled = true;
-    Q18.disabled = true;
-    Q19.disabled = true;
-    Q20.disabled = true;
+function eighteen() {
+  Q18.style.backgroundColor = "red";
+  Q20.style.backgroundColor = "green";
+  Q17.disabled = true;
+  Q18.disabled = true;
+  Q19.disabled = true;
+  Q20.disabled = true;
 }
 Q18.addEventListener("click", eighteen);
 
-function  nineteen(){
-    Q19.style.backgroundColor = "red";
-    Q20.style.backgroundColor = "green";
-    Q17.disabled = true;
-    Q18.disabled = true;
-    Q19.disabled = true;
-    Q20.disabled = true;
+function nineteen() {
+  Q19.style.backgroundColor = "red";
+  Q20.style.backgroundColor = "green";
+  Q17.disabled = true;
+  Q18.disabled = true;
+  Q19.disabled = true;
+  Q20.disabled = true;
 }
 Q19.addEventListener("click", nineteen);
 
-function  twenty(){
-    Q20.style.backgroundColor = "green";
-    Q17.disabled = true;
-    Q18.disabled = true;
-    Q19.disabled = true;
-    Q20.disabled = true;
+function twenty() {
+  Q20.style.backgroundColor = "green";
+  Q17.disabled = true;
+  Q18.disabled = true;
+  Q19.disabled = true;
+  Q20.disabled = true;
 }
 Q20.addEventListener("click", twenty);
 
-function  twentyOne(){
-    Q21.style.backgroundColor = "red";
-    Q22.style.backgroundColor = "green";
-    Q21.disabled = true;
-    Q22.disabled = true;
-    Q23.disabled = true;
-    Q24.disabled = true;
+function twentyOne() {
+  Q21.style.backgroundColor = "red";
+  Q22.style.backgroundColor = "green";
+  Q21.disabled = true;
+  Q22.disabled = true;
+  Q23.disabled = true;
+  Q24.disabled = true;
 }
 Q21.addEventListener("click", twentyOne);
 
-function  twentyTwo(){
-    Q22.style.backgroundColor = "green";
-    Q21.disabled = true;
-    Q22.disabled = true;
-    Q23.disabled = true;
-    Q24.disabled = true;
+function twentyTwo() {
+  Q22.style.backgroundColor = "green";
+  Q21.disabled = true;
+  Q22.disabled = true;
+  Q23.disabled = true;
+  Q24.disabled = true;
 }
 Q22.addEventListener("click", twentyTwo);
 
-function  twentyThree(){
-    Q23.style.backgroundColor = "red";
-    Q22.style.backgroundColor = "green";
-    Q21.disabled = true;
-    Q22.disabled = true;
-    Q23.disabled = true;
-    Q24.disabled = true;
+function twentyThree() {
+  Q23.style.backgroundColor = "red";
+  Q22.style.backgroundColor = "green";
+  Q21.disabled = true;
+  Q22.disabled = true;
+  Q23.disabled = true;
+  Q24.disabled = true;
 }
 Q23.addEventListener("click", twentyThree);
 
-function  twentyFour(){
-    Q24.style.backgroundColor = "red";
-    Q22.style.backgroundColor = "green";
-    Q21.disabled = true;
-    Q22.disabled = true;
-    Q23.disabled = true;
-    Q24.disabled = true;
+function twentyFour() {
+  Q24.style.backgroundColor = "red";
+  Q22.style.backgroundColor = "green";
+  Q21.disabled = true;
+  Q22.disabled = true;
+  Q23.disabled = true;
+  Q24.disabled = true;
 }
 Q24.addEventListener("click", twentyFour);
 
-function  twentyFive(){
-Q25.style.backgroundColor = "green";
-Q25.disabled = true;
-Q26.disabled = true;
-Q27.disabled = true;
-Q28.disabled = true;
+function twentyFive() {
+  Q25.style.backgroundColor = "green";
+  Q25.disabled = true;
+  Q26.disabled = true;
+  Q27.disabled = true;
+  Q28.disabled = true;
 }
 Q25.addEventListener("click", twentyFive);
 
-function  twentySix(){
-    Q26.style.backgroundColor = "red";
-    Q25.style.backgroundColor = "green";
-    Q25.disabled = true;
-    Q26.disabled = true;
-    Q27.disabled = true;
-    Q28.disabled = true;
+function twentySix() {
+  Q26.style.backgroundColor = "red";
+  Q25.style.backgroundColor = "green";
+  Q25.disabled = true;
+  Q26.disabled = true;
+  Q27.disabled = true;
+  Q28.disabled = true;
 }
 Q26.addEventListener("click", twentySix);
 
-function  twentySeven(){
-    Q27.style.backgroundColor = "red";
-    Q25.style.backgroundColor = "green";
-    Q25.disabled = true;
-    Q26.disabled = true;
-    Q27.disabled = true;
-    Q28.disabled = true;
+function twentySeven() {
+  Q27.style.backgroundColor = "red";
+  Q25.style.backgroundColor = "green";
+  Q25.disabled = true;
+  Q26.disabled = true;
+  Q27.disabled = true;
+  Q28.disabled = true;
 }
 Q27.addEventListener("click", twentySeven);
 
-function  twentyEight(){
-    Q28.style.backgroundColor = "red";
-    Q25.style.backgroundColor = "green";
-    Q25.disabled = true;
-    Q26.disabled = true;
-    Q27.disabled = true;
-    Q28.disabled = true;
+function twentyEight() {
+  Q28.style.backgroundColor = "red";
+  Q25.style.backgroundColor = "green";
+  Q25.disabled = true;
+  Q26.disabled = true;
+  Q27.disabled = true;
+  Q28.disabled = true;
 }
 Q28.addEventListener("click", twentyEight);
 
-function  twentyNine(){
-    Q29.style.backgroundColor = "red";
-    Q31.style.backgroundColor = "green";
-    Q29.disabled = true;
-    Q30.disabled = true;
-    Q31.disabled = true;
-    Q32.disabled = true;
+function twentyNine() {
+  Q29.style.backgroundColor = "red";
+  Q31.style.backgroundColor = "green";
+  Q29.disabled = true;
+  Q30.disabled = true;
+  Q31.disabled = true;
+  Q32.disabled = true;
 }
 Q29.addEventListener("click", twentyNine);
 
-function  thirty(){
-    Q30.style.backgroundColor = "red";
-    Q31.style.backgroundColor = "green";
-    Q29.disabled = true;
-    Q30.disabled = true;
-    Q31.disabled = true;
-    Q32.disabled = true;
+function thirty() {
+  Q30.style.backgroundColor = "red";
+  Q31.style.backgroundColor = "green";
+  Q29.disabled = true;
+  Q30.disabled = true;
+  Q31.disabled = true;
+  Q32.disabled = true;
 }
 Q30.addEventListener("click", thirty);
 
-function thirtyOne(){
-    Q31.style.backgroundColor = "green";
-    Q29.disabled = true;
-    Q30.disabled = true;
-    Q31.disabled = true;
-    Q32.disabled = true;
+function thirtyOne() {
+  Q31.style.backgroundColor = "green";
+  Q29.disabled = true;
+  Q30.disabled = true;
+  Q31.disabled = true;
+  Q32.disabled = true;
 }
 Q31.addEventListener("click", thirtyOne);
 
-function thirtyTwo(){
-    Q32.style.backgroundColor = "red";
-    Q31.style.backgroundColor = "green";
-    Q29.disabled = true;
-    Q30.disabled = true;
-    Q31.disabled = true;
-    Q32.disabled = true;
+function thirtyTwo() {
+  Q32.style.backgroundColor = "red";
+  Q31.style.backgroundColor = "green";
+  Q29.disabled = true;
+  Q30.disabled = true;
+  Q31.disabled = true;
+  Q32.disabled = true;
 }
 Q32.addEventListener("click", thirtyTwo);
 
-function thirtyThree(){
-    Q33.style.backgroundColor = "red";
-    Q36.style.backgroundColor = "green";
-    Q33.disabled = true;
-    Q34.disabled = true;
-    Q35.disabled = true;
-    Q36.disabled = true;
+function thirtyThree() {
+  Q33.style.backgroundColor = "red";
+  Q36.style.backgroundColor = "green";
+  Q33.disabled = true;
+  Q34.disabled = true;
+  Q35.disabled = true;
+  Q36.disabled = true;
 }
 Q33.addEventListener("click", thirtyThree);
 
-function thirtyFour(){
-    Q34.style.backgroundColor = "red";
-    Q36.style.backgroundColor = "green";
-    Q33.disabled = true;
-    Q34.disabled = true;
-    Q35.disabled = true;
-    Q36.disabled = true;
+function thirtyFour() {
+  Q34.style.backgroundColor = "red";
+  Q36.style.backgroundColor = "green";
+  Q33.disabled = true;
+  Q34.disabled = true;
+  Q35.disabled = true;
+  Q36.disabled = true;
 }
 Q34.addEventListener("click", thirtyFour);
 
-function thirtyFive(){
-    Q35.style.backgroundColor = "red";
-    Q36.style.backgroundColor = "green";
-    Q33.disabled = true;
-    Q34.disabled = true;
-    Q35.disabled = true;
-    Q36.disabled = true;
+function thirtyFive() {
+  Q35.style.backgroundColor = "red";
+  Q36.style.backgroundColor = "green";
+  Q33.disabled = true;
+  Q34.disabled = true;
+  Q35.disabled = true;
+  Q36.disabled = true;
 }
 Q35.addEventListener("click", thirtyFive);
 
-function thirtySix(){
-    Q36.style.backgroundColor = "green";
-    Q33.disabled = true;
-    Q34.disabled = true;
-    Q35.disabled = true;
-    Q36.disabled = true;
+function thirtySix() {
+  Q36.style.backgroundColor = "green";
+  Q33.disabled = true;
+  Q34.disabled = true;
+  Q35.disabled = true;
+  Q36.disabled = true;
 }
 Q36.addEventListener("click", thirtySix);
 
-function thirtySeven(){
-    Q37.style.backgroundColor = "red";
-    Q39.style.backgroundColor = "green";
-    Q37.disabled = true;
-    Q38.disabled = true;
-    Q39.disabled = true;
-    Q40.disabled = true;
+function thirtySeven() {
+  Q37.style.backgroundColor = "red";
+  Q39.style.backgroundColor = "green";
+  Q37.disabled = true;
+  Q38.disabled = true;
+  Q39.disabled = true;
+  Q40.disabled = true;
 }
 Q37.addEventListener("click", thirtySeven);
 
-function thirtyEight(){
-    Q38.style.backgroundColor = "red";
-    Q39.style.backgroundColor = "green";
-    Q37.disabled = true;
-    Q38.disabled = true;
-    Q39.disabled = true;
-    Q40.disabled = true;
+function thirtyEight() {
+  Q38.style.backgroundColor = "red";
+  Q39.style.backgroundColor = "green";
+  Q37.disabled = true;
+  Q38.disabled = true;
+  Q39.disabled = true;
+  Q40.disabled = true;
 }
 Q38.addEventListener("click", thirtyEight);
 
-function thirtyNine(){
-    Q39.style.backgroundColor = "green";
-    Q37.disabled = true;
-    Q38.disabled = true;
-    Q39.disabled = true;
-    Q40.disabled = true;
+function thirtyNine() {
+  Q39.style.backgroundColor = "green";
+  Q37.disabled = true;
+  Q38.disabled = true;
+  Q39.disabled = true;
+  Q40.disabled = true;
 }
 Q39.addEventListener("click", thirtyNine);
 
-function fourty(){
-    Q40.style.backgroundColor = "red";
-    Q39.style.backgroundColor = "green";
-    Q37.disabled = true;
-    Q38.disabled = true;
-    Q39.disabled = true;
-    Q40.disabled = true;
+function fourty() {
+  Q40.style.backgroundColor = "red";
+  Q39.style.backgroundColor = "green";
+  Q37.disabled = true;
+  Q38.disabled = true;
+  Q39.disabled = true;
+  Q40.disabled = true;
 }
 Q40.addEventListener("click", fourty);
 
-function fourtyOne(){
-    Q41.style.backgroundColor = "green";
-    Q41.disabled = true;
-    Q42.disabled = true;
-    Q43.disabled = true;
-    Q44.disabled = true;
+function fourtyOne() {
+  Q41.style.backgroundColor = "green";
+  Q41.disabled = true;
+  Q42.disabled = true;
+  Q43.disabled = true;
+  Q44.disabled = true;
 }
 Q41.addEventListener("click", fourtyOne);
 
-function fourtyTwo(){
-    Q42.style.backgroundColor = "red";
-    Q41.style.backgroundColor = "green";
-    Q41.disabled = true;
-    Q42.disabled = true;
-    Q43.disabled = true;
-    Q44.disabled = true;
+function fourtyTwo() {
+  Q42.style.backgroundColor = "red";
+  Q41.style.backgroundColor = "green";
+  Q41.disabled = true;
+  Q42.disabled = true;
+  Q43.disabled = true;
+  Q44.disabled = true;
 }
 Q42.addEventListener("click", fourtyTwo);
 
-function fourtyThree(){
-    Q43.style.backgroundColor = "red";
-    Q41.style.backgroundColor = "green";
-    Q41.disabled = true;
-    Q42.disabled = true;
-    Q43.disabled = true;
-    Q44.disabled = true;
+function fourtyThree() {
+  Q43.style.backgroundColor = "red";
+  Q41.style.backgroundColor = "green";
+  Q41.disabled = true;
+  Q42.disabled = true;
+  Q43.disabled = true;
+  Q44.disabled = true;
 }
 Q43.addEventListener("click", fourtyThree);
 
-function fourtyFour(){
-    Q44.style.backgroundColor = "red";
-    Q41.style.backgroundColor = "green";
-    Q41.disabled = true;
-    Q42.disabled = true;
-    Q43.disabled = true;
-    Q44.disabled = true;
+function fourtyFour() {
+  Q44.style.backgroundColor = "red";
+  Q41.style.backgroundColor = "green";
+  Q41.disabled = true;
+  Q42.disabled = true;
+  Q43.disabled = true;
+  Q44.disabled = true;
 }
 Q44.addEventListener("click", fourtyFour);
 
-function fourtyFive(){
-    Q45.style.backgroundColor = "red";
-    Q48.style.backgroundColor = "green";
-    Q45.disabled = true;
-    Q46.disabled = true;
-    Q47.disabled = true;
-    Q48.disabled = true;
+function fourtyFive() {
+  Q45.style.backgroundColor = "red";
+  Q48.style.backgroundColor = "green";
+  Q45.disabled = true;
+  Q46.disabled = true;
+  Q47.disabled = true;
+  Q48.disabled = true;
 }
 Q45.addEventListener("click", fourtyFive);
 
-function fourtySix(){
-    Q46.style.backgroundColor = "red";
-    Q48.style.backgroundColor = "green";
-    Q45.disabled = true;
-    Q46.disabled = true;
-    Q47.disabled = true;
-    Q48.disabled = true;
+function fourtySix() {
+  Q46.style.backgroundColor = "red";
+  Q48.style.backgroundColor = "green";
+  Q45.disabled = true;
+  Q46.disabled = true;
+  Q47.disabled = true;
+  Q48.disabled = true;
 }
 Q46.addEventListener("click", fourtySix);
 
-function fourtySeven(){
-    Q47.style.backgroundColor = "red";
-    Q48.style.backgroundColor = "green";
-    Q45.disabled = true;
-    Q46.disabled = true;
-    Q47.disabled = true;
-    Q48.disabled = true;
+function fourtySeven() {
+  Q47.style.backgroundColor = "red";
+  Q48.style.backgroundColor = "green";
+  Q45.disabled = true;
+  Q46.disabled = true;
+  Q47.disabled = true;
+  Q48.disabled = true;
 }
 Q47.addEventListener("click", fourtySeven);
 
-function fourtyEight(){
-    Q48.style.backgroundColor = "green";
-    Q45.disabled = true;
-    Q46.disabled = true;
-    Q47.disabled = true;
-    Q48.disabled = true;
+function fourtyEight() {
+  Q48.style.backgroundColor = "green";
+  Q45.disabled = true;
+  Q46.disabled = true;
+  Q47.disabled = true;
+  Q48.disabled = true;
 }
 Q48.addEventListener("click", fourtyEight);
 
-function fourtyNine(){
-    Q49.style.backgroundColor = "red";
-    Q50.style.backgroundColor = "green";
-    Q49.disabled = true;
-    Q50.disabled = true;
-    Q51.disabled = true;
-    Q52.disabled = true;
+function fourtyNine() {
+  Q49.style.backgroundColor = "red";
+  Q50.style.backgroundColor = "green";
+  Q49.disabled = true;
+  Q50.disabled = true;
+  Q51.disabled = true;
+  Q52.disabled = true;
 }
 Q49.addEventListener("click", fourtyNine);
 
-function fifty(){
-    Q50.style.backgroundColor = "green";
-    Q49.disabled = true;
-    Q50.disabled = true;
-    Q51.disabled = true;
-    Q52.disabled = true;
+function fifty() {
+  Q50.style.backgroundColor = "green";
+  Q49.disabled = true;
+  Q50.disabled = true;
+  Q51.disabled = true;
+  Q52.disabled = true;
 }
 Q50.addEventListener("click", fifty);
 
-function fiftyOne(){
-    Q51.style.backgroundColor = "red";
-    Q50.style.backgroundColor = "green";
-    Q49.disabled = true;
-    Q50.disabled = true;
-    Q51.disabled = true;
-    Q52.disabled = true;
+function fiftyOne() {
+  Q51.style.backgroundColor = "red";
+  Q50.style.backgroundColor = "green";
+  Q49.disabled = true;
+  Q50.disabled = true;
+  Q51.disabled = true;
+  Q52.disabled = true;
 }
 Q51.addEventListener("click", fiftyOne);
 
-function fiftyTwo(){
-    Q52.style.backgroundColor = "red";
-    Q50.style.backgroundColor = "green";
-    Q49.disabled = true;
-    Q50.disabled = true;
-    Q51.disabled = true;
-    Q52.disabled = true;
+function fiftyTwo() {
+  Q52.style.backgroundColor = "red";
+  Q50.style.backgroundColor = "green";
+  Q49.disabled = true;
+  Q50.disabled = true;
+  Q51.disabled = true;
+  Q52.disabled = true;
 }
 Q52.addEventListener("click", fiftyTwo);
 
-function fiftyThree(){
-    Q53.style.backgroundColor = "red";
-    Q55.style.backgroundColor = "green";
-    Q53.disabled = true;
-    Q54.disabled = true;
-    Q55.disabled = true;
-    Q56.disabled = true;
+function fiftyThree() {
+  Q53.style.backgroundColor = "red";
+  Q55.style.backgroundColor = "green";
+  Q53.disabled = true;
+  Q54.disabled = true;
+  Q55.disabled = true;
+  Q56.disabled = true;
 }
 Q53.addEventListener("click", fiftyThree);
 
-function fiftyFour(){
-    Q54.style.backgroundColor = "red";
-    Q55.style.backgroundColor = "green";
-    Q53.disabled = true;
-    Q54.disabled = true;
-    Q55.disabled = true;
-    Q56.disabled = true;
+function fiftyFour() {
+  Q54.style.backgroundColor = "red";
+  Q55.style.backgroundColor = "green";
+  Q53.disabled = true;
+  Q54.disabled = true;
+  Q55.disabled = true;
+  Q56.disabled = true;
 }
 Q54.addEventListener("click", fiftyFour);
 
-function fiftyFive(){
-    Q55.style.backgroundColor = "green";
-    Q53.disabled = true;
-    Q54.disabled = true;
-    Q55.disabled = true;
-    Q56.disabled = true;
+function fiftyFive() {
+  Q55.style.backgroundColor = "green";
+  Q53.disabled = true;
+  Q54.disabled = true;
+  Q55.disabled = true;
+  Q56.disabled = true;
 }
 Q55.addEventListener("click", fiftyFive);
 
-function fiftySix(){
-    Q56.style.backgroundColor = "red";
-    Q55.style.backgroundColor = "green";
-    Q53.disabled = true;
-    Q54.disabled = true;
-    Q55.disabled = true;
-    Q56.disabled = true;
+function fiftySix() {
+  Q56.style.backgroundColor = "red";
+  Q55.style.backgroundColor = "green";
+  Q53.disabled = true;
+  Q54.disabled = true;
+  Q55.disabled = true;
+  Q56.disabled = true;
 }
 Q56.addEventListener("click", fiftySix);
 
-function fiftySeven(){
-    Q57.style.backgroundColor = "red";
-    Q60.style.backgroundColor = "green";
-    Q57.disabled = true;
-    Q58.disabled = true;
-    Q59.disabled = true;
-    Q60.disabled = true;
+function fiftySeven() {
+  Q57.style.backgroundColor = "red";
+  Q60.style.backgroundColor = "green";
+  Q57.disabled = true;
+  Q58.disabled = true;
+  Q59.disabled = true;
+  Q60.disabled = true;
 }
 Q57.addEventListener("click", fiftySeven);
 
-function fiftyEight(){
-    Q58.style.backgroundColor = "red";
-    Q60.style.backgroundColor = "green";
-    Q57.disabled = true;
-    Q58.disabled = true;
-    Q59.disabled = true;
-    Q60.disabled = true;
+function fiftyEight() {
+  Q58.style.backgroundColor = "red";
+  Q60.style.backgroundColor = "green";
+  Q57.disabled = true;
+  Q58.disabled = true;
+  Q59.disabled = true;
+  Q60.disabled = true;
 }
 Q58.addEventListener("click", fiftyEight);
 
-function fiftyNine(){
-    Q59.style.backgroundColor = "red";
-    Q60.style.backgroundColor = "green";
-    Q57.disabled = true;
-    Q58.disabled = true;
-    Q59.disabled = true;
-    Q60.disabled = true;
+function fiftyNine() {
+  Q59.style.backgroundColor = "red";
+  Q60.style.backgroundColor = "green";
+  Q57.disabled = true;
+  Q58.disabled = true;
+  Q59.disabled = true;
+  Q60.disabled = true;
 }
 Q59.addEventListener("click", fiftyNine);
 
-function sixty (){
-    Q60.style.backgroundColor = "green";
-    Q57.disabled = true;
-    Q58.disabled = true;
-    Q59.disabled = true;
-    Q60.disabled = true;
+function sixty() {
+  Q60.style.backgroundColor = "green";
+  Q57.disabled = true;
+  Q58.disabled = true;
+  Q59.disabled = true;
+  Q60.disabled = true;
 }
 Q60.addEventListener("click", sixty);
 
-function sixtyOne(){
-    Q61.style.backgroundColor = "red";
-    Q62.style.backgroundColor = "green";
-    Q61.disabled = true;
-    Q62.disabled = true;
-    Q63.disabled = true;
-    Q64.disabled = true;
+function sixtyOne() {
+  Q61.style.backgroundColor = "red";
+  Q62.style.backgroundColor = "green";
+  Q61.disabled = true;
+  Q62.disabled = true;
+  Q63.disabled = true;
+  Q64.disabled = true;
 }
 Q61.addEventListener("click", sixtyOne);
 
-function sixtyTwo(){
-    Q62.style.backgroundColor = "green";
-    Q61.disabled = true;
-    Q62.disabled = true;
-    Q63.disabled = true;
-    Q64.disabled = true;
+function sixtyTwo() {
+  Q62.style.backgroundColor = "green";
+  Q61.disabled = true;
+  Q62.disabled = true;
+  Q63.disabled = true;
+  Q64.disabled = true;
 }
 Q62.addEventListener("click", sixtyTwo);
 
-function sixtyThree(){
-    Q63.style.backgroundColor = "red";
-    Q62.style.backgroundColor = "green";
-    Q61.disabled = true;
-    Q62.disabled = true;
-    Q63.disabled = true;
-    Q64.disabled = true;
+function sixtyThree() {
+  Q63.style.backgroundColor = "red";
+  Q62.style.backgroundColor = "green";
+  Q61.disabled = true;
+  Q62.disabled = true;
+  Q63.disabled = true;
+  Q64.disabled = true;
 }
 Q63.addEventListener("click", sixtyThree);
 
-function sixtyFour(){
-    Q64.style.backgroundColor = "red";
-    Q62.style.backgroundColor = "green";
-    Q61.disabled = true;
-    Q62.disabled = true;
-    Q63.disabled = true;
-    Q64.disabled = true;
+function sixtyFour() {
+  Q64.style.backgroundColor = "red";
+  Q62.style.backgroundColor = "green";
+  Q61.disabled = true;
+  Q62.disabled = true;
+  Q63.disabled = true;
+  Q64.disabled = true;
 }
 Q64.addEventListener("click", sixtyFour);
 
-function sixtyFive(){
-    Q65.style.backgroundColor = "red";
-    Q68.style.backgroundColor = "green";
-    Q65.disabled = true;
-    Q66.disabled = true;
-    Q67.disabled = true;
-    Q68.disabled = true;
+function sixtyFive() {
+  Q65.style.backgroundColor = "red";
+  Q68.style.backgroundColor = "green";
+  Q65.disabled = true;
+  Q66.disabled = true;
+  Q67.disabled = true;
+  Q68.disabled = true;
 }
 Q65.addEventListener("click", sixtyFive);
 
-function sixtySix(){
-    Q66.style.backgroundColor = "red";
-    Q68.style.backgroundColor = "green";
-    Q65.disabled = true;
-    Q66.disabled = true;
-    Q67.disabled = true;
-    Q68.disabled = true;
+function sixtySix() {
+  Q66.style.backgroundColor = "red";
+  Q68.style.backgroundColor = "green";
+  Q65.disabled = true;
+  Q66.disabled = true;
+  Q67.disabled = true;
+  Q68.disabled = true;
 }
 Q66.addEventListener("click", sixtySix);
 
-function sixtySeven(){
-    Q67.style.backgroundColor = "red";
-    Q68.style.backgroundColor = "green";
-    Q65.disabled = true;
-    Q66.disabled = true;
-    Q67.disabled = true;
-    Q68.disabled = true;
+function sixtySeven() {
+  Q67.style.backgroundColor = "red";
+  Q68.style.backgroundColor = "green";
+  Q65.disabled = true;
+  Q66.disabled = true;
+  Q67.disabled = true;
+  Q68.disabled = true;
 }
 Q67.addEventListener("click", sixtySeven);
 
-function sixtyEight(){
-    Q68.style.backgroundColor = "green";
-    Q65.disabled = true;
-    Q66.disabled = true;
-    Q67.disabled = true;
-    Q68.disabled = true;
+function sixtyEight() {
+  Q68.style.backgroundColor = "green";
+  Q65.disabled = true;
+  Q66.disabled = true;
+  Q67.disabled = true;
+  Q68.disabled = true;
 }
 Q68.addEventListener("click", sixtyEight);
 
-function sixtyNine(){
-    Q69.style.backgroundColor = "green";
-    Q69.disabled = true;
-    Q70.disabled = true;
-    Q71.disabled = true;
-    Q72.disabled = true;
+function sixtyNine() {
+  Q69.style.backgroundColor = "green";
+  Q69.disabled = true;
+  Q70.disabled = true;
+  Q71.disabled = true;
+  Q72.disabled = true;
 }
 Q69.addEventListener("click", sixtyNine);
 
-function  seventy(){
-    Q70.style.backgroundColor = "red";
-    Q69.style.backgroundColor = "green";
-    Q69.disabled = true;
-    Q70.disabled = true;
-    Q71.disabled = true;
-    Q72.disabled = true;
+function seventy() {
+  Q70.style.backgroundColor = "red";
+  Q69.style.backgroundColor = "green";
+  Q69.disabled = true;
+  Q70.disabled = true;
+  Q71.disabled = true;
+  Q72.disabled = true;
 }
 Q70.addEventListener("click", seventy);
 
-function  seventyOne(){
-    Q71.style.backgroundColor = "red";
-    Q69.style.backgroundColor = "green";
-    Q69.disabled = true;
-    Q70.disabled = true;
-    Q71.disabled = true;
-    Q72.disabled = true;
+function seventyOne() {
+  Q71.style.backgroundColor = "red";
+  Q69.style.backgroundColor = "green";
+  Q69.disabled = true;
+  Q70.disabled = true;
+  Q71.disabled = true;
+  Q72.disabled = true;
 }
 Q71.addEventListener("click", seventyOne);
 
-function  seventyTwo(){
-    Q72.style.backgroundColor = "red";
-    Q69.style.backgroundColor = "green";
-    Q69.disabled = true;
-    Q70.disabled = true;
-    Q71.disabled = true;
-    Q72.disabled = true;
+function seventyTwo() {
+  Q72.style.backgroundColor = "red";
+  Q69.style.backgroundColor = "green";
+  Q69.disabled = true;
+  Q70.disabled = true;
+  Q71.disabled = true;
+  Q72.disabled = true;
 }
 Q72.addEventListener("click", seventyTwo);
 
-function  seventyThree(){
-    Q73.style.backgroundColor = "green";
-    Q73.disabled = true;
-    Q74.disabled = true;
-    Q75.disabled = true;
-    Q76.disabled = true;
+function seventyThree() {
+  Q73.style.backgroundColor = "green";
+  Q73.disabled = true;
+  Q74.disabled = true;
+  Q75.disabled = true;
+  Q76.disabled = true;
 }
 Q73.addEventListener("click", seventyThree);
 
-function  seventyFour(){
-    Q74.style.backgroundColor = "red";
-    Q73.style.backgroundColor = "green";
-    Q73.disabled = true;
-    Q74.disabled = true;
-    Q75.disabled = true;
-    Q76.disabled = true;
+function seventyFour() {
+  Q74.style.backgroundColor = "red";
+  Q73.style.backgroundColor = "green";
+  Q73.disabled = true;
+  Q74.disabled = true;
+  Q75.disabled = true;
+  Q76.disabled = true;
 }
 Q74.addEventListener("click", seventyFour);
 
-function  seventyFive(){
-    Q75.style.backgroundColor = "red";
-    Q73.style.backgroundColor = "green";
-    Q73.disabled = true;
-    Q74.disabled = true;
-    Q75.disabled = true;
-    Q76.disabled = true;
+function seventyFive() {
+  Q75.style.backgroundColor = "red";
+  Q73.style.backgroundColor = "green";
+  Q73.disabled = true;
+  Q74.disabled = true;
+  Q75.disabled = true;
+  Q76.disabled = true;
 }
 Q75.addEventListener("click", seventyFive);
 
-function  seventySix(){
-    Q76.style.backgroundColor = "red";
-    Q73.style.backgroundColor = "green";
-    Q73.disabled = true;
-    Q74.disabled = true;
-    Q75.disabled = true;
-    Q76.disabled = true;
+function seventySix() {
+  Q76.style.backgroundColor = "red";
+  Q73.style.backgroundColor = "green";
+  Q73.disabled = true;
+  Q74.disabled = true;
+  Q75.disabled = true;
+  Q76.disabled = true;
 }
 Q76.addEventListener("click", seventySix);
 
-function seventySeven (){
-    Q77.style.backgroundColor = "red";
-    Q79.style.backgroundColor = "green";
-    Q77.disabled = true;
-    Q78.disabled = true;
-    Q79.disabled = true;
-    Q80.disabled = true;
+function seventySeven() {
+  Q77.style.backgroundColor = "red";
+  Q79.style.backgroundColor = "green";
+  Q77.disabled = true;
+  Q78.disabled = true;
+  Q79.disabled = true;
+  Q80.disabled = true;
 }
 Q77.addEventListener("click", seventySeven);
 
-function seventyEight (){
-    Q78.style.backgroundColor = "red";
-    Q79.style.backgroundColor = "green";
-    Q77.disabled = true;
-    Q78.disabled = true;
-    Q79.disabled = true;
-    Q80.disabled = true;
+function seventyEight() {
+  Q78.style.backgroundColor = "red";
+  Q79.style.backgroundColor = "green";
+  Q77.disabled = true;
+  Q78.disabled = true;
+  Q79.disabled = true;
+  Q80.disabled = true;
 }
 Q78.addEventListener("click", seventyEight);
 
-function seventyNine (){
-    Q79.style.backgroundColor = "green";
-    Q77.disabled = true;
-    Q78.disabled = true;
-    Q79.disabled = true;
-    Q80.disabled = true;
+function seventyNine() {
+  Q79.style.backgroundColor = "green";
+  Q77.disabled = true;
+  Q78.disabled = true;
+  Q79.disabled = true;
+  Q80.disabled = true;
 }
 Q79.addEventListener("click", seventyNine);
 
-function eighty (){
-    Q80.style.backgroundColor = "red";
-    Q79.style.backgroundColor = "green";
-    Q77.disabled = true;
-    Q78.disabled = true;
-    Q79.disabled = true;
-    Q80.disabled = true;
+function eighty() {
+  Q80.style.backgroundColor = "red";
+  Q79.style.backgroundColor = "green";
+  Q77.disabled = true;
+  Q78.disabled = true;
+  Q79.disabled = true;
+  Q80.disabled = true;
 }
 Q80.addEventListener("click", eighty);
