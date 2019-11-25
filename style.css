@@ -1,26 +1,26 @@
-body{
-    text-align: center;
-    background-size: 1000px;
-    font-weight: 100;
-    font-family: 'Courier New', Courier, monospace;
+body {
+  text-align: center;
+  background-size: 1000px;
+  font-weight: 100;
+  font-family: "Courier New", Courier, monospace;
 }
-button{
-    width: 400px;
-    height: 100px;
-    background-color: orange;
-    font-size: 24px;
-    font-weight: 100;
-    font-family: 'Courier New', Courier, monospace;
+button {
+  width: 400px;
+  height: 100px;
+  background-color: orange;
+  font-size: 24px;
+  font-weight: 100;
+  font-family: "Courier New", Courier, monospace;
 }
-button:hover{
-    background-color: aqua;
+button:hover {
+  background-color: aqua;
 }
-#title{
-    margin-top: 250px;
-    text-decoration: underline;
+#title {
+  margin-top: 250px;
+  text-decoration: underline;
 }
-p{
-    font-weight: 100;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 24px
+p {
+  font-weight: 100;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
 }
