@@ -35,7 +35,7 @@ div {
   background-color: orange;
 }
 #bottom {
-  padding: 200px 0px 500px 0px;
+  padding: 0px 0px 500px 0px;
 }
 
 #modal {
@@ -79,8 +79,9 @@ h1 {
   cursor: pointer;
 }
 #score {
-  margin-left: 75%;
-  position: fixed;
+  margin-left: 62%;
+  /* position: fixed; */
+  display: none;
 }
 #close {
   background-color: red;
